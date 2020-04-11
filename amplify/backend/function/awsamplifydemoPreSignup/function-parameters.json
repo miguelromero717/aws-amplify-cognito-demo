@@ -1,0 +1,15 @@
+{
+    "trigger": true,
+    "modules": [
+        "custom"
+    ],
+    "parentResource": "awsamplifydemo",
+    "functionName": "awsamplifydemoPreSignup",
+    "resourceName": "awsamplifydemoPreSignup",
+    "parentStack": "auth",
+    "triggerEnvs": [],
+    "triggerDir": "/Users/mromero/.local/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/PreSignup",
+    "triggerTemplate": "PreSignup.json.ejs",
+    "roleName": "awsamplifydemoPreSignup",
+    "skipEdit": true
+}

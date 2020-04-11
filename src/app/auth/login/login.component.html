@@ -1,0 +1,29 @@
+<mat-grid-list cols="3" rowHeight="50vh">
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card>
+            <mat-card-title>
+                Login
+            </mat-card-title>
+            <mat-card-subtitle>
+                Login with your phone - password credentials
+            </mat-card-subtitle>
+            <mat-card-content>
+                <form class="example-form" [formGroup]="loginForm" id="loginForm" (ngSubmit)="login()">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Phone</mat-label>
+                        <input matInput placeholder="Phone" formControlName="phone">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Password" formControlName="password" type="password">
+                    </mat-form-field>
+                </form>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button color="primary" form="loginForm">Login</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+</mat-grid-list>
